@@ -74,11 +74,12 @@ class WelcomeCard extends HTMLElement {
             <h1>Ferias de Emprendimiento BucaraEmprende</h1>
             <p>Registra y visualiza la información de eventos de emprendimientos en Bucaramanga y su área metropolitana</p>
             <div class="container-buttons">
-                <button class="buttonMain1">Ver eventos</button>
-                <button class="buttonMain2">Registrar evento</button>
+                <button id="button1" class="buttonMain1">Ver eventos</button>
+                <button id="button2" class="buttonMain2">Registrar evento</button>
             </div>
         </div>
         `;
+
         container.appendChild(mainCard)
         shadow.appendChild(style);
         shadow.appendChild(container);

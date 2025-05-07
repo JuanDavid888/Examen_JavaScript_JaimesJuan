@@ -38,6 +38,23 @@ class optionsCards extends HTMLElement {
                 margin-left: 33%;
                 margin-bottom: 10%;
             }
+            
+            @media screen and (min-width: 700px) {
+                .container {
+                    width: 80%;
+                    margin-left: 10%;
+                    margin-bottom: 5%;
+                }
+
+                .container-cards {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+                gap: 1.5rem;
+                padding: 2rem;
+                justify-content: center;
+                margin-left: 25%;
+            }
+            }
         `;
         const container = document.createElement("div");
         container.classList.add("container");
