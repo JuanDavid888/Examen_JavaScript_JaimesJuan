@@ -44,6 +44,12 @@ class NavBar extends HTMLElement {
                 border-radius: 0.3rem;
                 cursor: pointer;
             }
+
+            .nav2 button:hover {
+                transform: scale(1.1);
+                background: #000000;
+                color: white;
+            }
             
             @media screen and (max-width: 470px) {
                 .barrita {
