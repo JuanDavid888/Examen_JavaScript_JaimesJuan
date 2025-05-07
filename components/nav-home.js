@@ -4,7 +4,45 @@ class NavBar extends HTMLElement {
         const shadow = this.attachShadow({ mode: "open" });
         const style = document.createElement("style");
         style.innerHTML = `
+            .nav-container {
+                width: 100%;
+                padding: 1rem 0;
+            }
+
+            .barrita {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+            }
+
+            .barrita .nav1 {
+                display: flex;
+                flex-direction: row;
+                width: 30%;
+            }
+            .nav1 img{
+                width: 13%;
+                object-fit: contain;
+            }
+
+            .nav1 h2 {
+                font-size: 115%;
+                margin-left: 3%
+            }
+
+            .barrita .nav2 {
+                display: flex;
+                width: 70%;
+                justify-content: end;
+                gap: 5%;
+            }
             
+            .nav2 button {
+                margin-top: 1.5%;
+                height: 2rem;
+                border: none;
+                cursor: pointer;
+            }
         `
 
         const container = document.createElement("div");
