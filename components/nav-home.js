@@ -41,9 +41,35 @@ class NavBar extends HTMLElement {
                 margin-top: 1.5%;
                 height: 2rem;
                 border: none;
+                border-radius: 0.3rem;
                 cursor: pointer;
             }
-        `
+            
+            @media screen and (max-width: 470px) {
+                .barrita {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                }
+                .barrita .nav1 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    width: 100%;
+                }
+                .nav1 img{
+                    width: 12%;
+                    object-fit: contain;
+                }
+                .barrita .nav2 {
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    margin-top: 2%;
+                    gap: 5%;
+                }
+            }
+        `;
 
         const container = document.createElement("div");
         container.classList.add("nav-container");
