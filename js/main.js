@@ -1,2 +1,3 @@
 import { NavBar } from "../components/nav-home.js";
-import { optionCards } from "../components/content-welcome.js";
+import { WelcomeCard } from "../components/content-welcome.js";
+import { optionsCards } from "../components/options.js";

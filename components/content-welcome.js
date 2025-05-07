@@ -1,4 +1,4 @@
-class optionCards extends HTMLElement {
+class WelcomeCard extends HTMLElement {
     constructor() {
         super();
         const shadow = this.attachShadow({ mode: "open" });
@@ -7,6 +7,7 @@ class optionCards extends HTMLElement {
             .container {
                 width: 90%;
                 margin-left: 5%;
+                margin-bottom: 5%;
                 border-radius: 0.6rem;
                 background: linear-gradient(90grad,rgb(72, 21, 190), rgb(226, 151, 12));
             }
@@ -83,5 +84,5 @@ class optionCards extends HTMLElement {
         shadow.appendChild(container);
     }
 }
-customElements.define("news-info", optionCards);
-export { optionCards };
+customElements.define("news-info", WelcomeCard);
+export { WelcomeCard };
